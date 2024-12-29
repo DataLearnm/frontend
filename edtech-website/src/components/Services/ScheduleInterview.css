@@ -1,0 +1,192 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Main Container */
+.schedule-interview {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.schedule-interview:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.schedule-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.schedule-header h1 {
+  font-size: 2.5rem;
+  color: #2388ec;
+  margin-bottom: 10px;
+}
+
+.schedule-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+/* Form */
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #3498db;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .schedule-interview {
+    padding: 25px;
+  }
+
+  .schedule-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .schedule-form {
+    margin-top: 20px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-interview {
+    padding: 20px;
+  }
+
+  .schedule-header h1 {
+    font-size: 2rem;
+  }
+
+  .schedule-header p {
+    font-size: 1rem;
+  }
+
+  .schedule-form {
+    margin-top: 20px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-interview {
+    padding: 15px;
+  }
+
+  .schedule-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .schedule-form {
+    margin-top: 15px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

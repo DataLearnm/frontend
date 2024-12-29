@@ -1,0 +1,98 @@
+.payment-page {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #6361f7;
+}
+
+.payment-page p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bank-details {
+  margin-bottom: 20px;
+}
+
+.bank-details p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .payment-page {
+    padding: 30px;
+  }
+
+  .payment-page h2 {
+    font-size: 20px;
+  }
+
+  .payment-page p {
+    font-size: 14px;
+  }
+
+  .bank-details p {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* For mobile devices (max-width 480px) */
+@media (max-width: 480px) {
+  .payment-page {
+    padding: 20px;
+  }
+
+  .payment-page h2 {
+    font-size: 18px;
+  }
+
+  .payment-page p {
+    font-size: 14px;
+  }
+
+  .bank-details p {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

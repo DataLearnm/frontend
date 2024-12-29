@@ -1,0 +1,76 @@
+.cta-section {
+  background: #8d9bf2;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: rgb(40, 39, 39);
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: rgb(40, 39, 39);
+}
+
+.cta-button {
+  background: white;
+  color: #4c63ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 30px 15px; /* Reduced padding for tablets */
+  }
+
+  .cta-section h2 {
+    font-size: 28px; /* Smaller font size for h2 */
+  }
+
+  .cta-section p {
+    font-size: 16px; /* Reduced font size for paragraph */
+  }
+
+  .cta-button {
+    padding: 8px 16px; /* Reduced padding for the button */
+    font-size: 16px; /* Reduced font size for the button */
+  }
+}
+
+/* For mobile screens (max-width 480px) */
+@media (max-width: 480px) {
+  .cta-section {
+    padding: 20px 10px; /* Further reduced padding for mobile */
+  }
+
+  .cta-section h2 {
+    font-size: 24px; /* Further reduced font size for h2 */
+  }
+
+  .cta-section p {
+    font-size: 14px; /* Further reduced font size for paragraph */
+  }
+
+  .cta-button {
+    padding: 6px 12px; /* Smaller button padding */
+    font-size: 14px; /* Smaller font size for button */
+  }
+}

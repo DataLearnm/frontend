@@ -1,0 +1,142 @@
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  height: 100vh;
+}
+
+/* Thank You Page */
+.thank-you-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensures it takes full viewport height */
+  margin: 0;
+}
+
+/* Thank You Container */
+.thank-you-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Icon Container */
+.icon-container {
+  background-color: #e0f7e9;
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Check Icon */
+.check-icon {
+  color: #4caf50;
+  width: 50px;
+  height: 50px;
+}
+
+/* Title */
+h1 {
+  color: #333333;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* Paragraph Text */
+p {
+  color: #666666;
+  margin: 5px 0;
+}
+
+/* Home Button */
+.home-button {
+  background-color: #2575fc;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.home-button:hover {
+  background-color: #0056c7;
+}
+
+/* Responsive Design */
+
+/* For screens 768px or smaller (tablets) */
+@media (max-width: 768px) {
+  .thank-you-container {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .check-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* For screens 480px or smaller (mobile devices) */
+@media (max-width: 480px) {
+  .thank-you-container {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .check-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+/* For screens 375px or smaller (small mobile devices) */
+@media (max-width: 375px) {
+  .thank-you-container {
+    padding: 15px;
+    max-width: 280px;
+  }
+
+  .check-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .home-button {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}

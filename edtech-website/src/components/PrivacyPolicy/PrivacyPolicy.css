@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.privacy-policy {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headers */
+.privacy-policy h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+.privacy-policy h2 {
+  font-size: 1.8em;
+  color: #333333;
+  border-left: 5px solid #0073e6;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+/* Paragraphs */
+.privacy-policy p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* List Styles */
+.privacy-policy ul {
+  list-style: disc;
+  margin: 10px 0 20px 20px;
+  padding-left: 20px;
+}
+
+.privacy-policy ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+/* Links */
+.privacy-policy a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+/* Address */
+.privacy-policy address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+/* Last Updated */
+.privacy-policy .last-updated {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Highlighted Elements */
+.privacy-policy strong {
+  color: #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 15px;
+  }
+
+  .privacy-policy h1 {
+    font-size: 2em;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.5em;
+  }
+
+  .privacy-policy p,
+  .privacy-policy ul li {
+    font-size: 1em;
+  }
+
+  /* Address Styling */
+  .privacy-policy address {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  /* Last Updated */
+  .privacy-policy .last-updated {
+    font-size: 0.8em;
+  }
+
+  /* Links */
+  .privacy-policy a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy {
+    padding: 10px;
+  }
+
+  .privacy-policy h1 {
+    font-size: 1.8em;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.3em;
+  }
+
+  .privacy-policy p,
+  .privacy-policy ul li {
+    font-size: 0.9em;
+  }
+
+  .privacy-policy .last-updated {
+    font-size: 0.7em;
+  }
+
+  .privacy-policy address {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 375px) {
+  .privacy-policy h1 {
+    font-size: 1.7em;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.2em;
+  }
+
+  .privacy-policy p,
+  .privacy-policy ul li {
+    font-size: 0.85em;
+  }
+
+  .privacy-policy .last-updated {
+    font-size: 0.65em;
+  }
+}

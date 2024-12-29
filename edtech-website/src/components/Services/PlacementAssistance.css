@@ -1,0 +1,267 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.placement-container {
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.placement-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #9bbbdb, #00bfff);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.placement-header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.placement-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.placement-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.placement-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.placement-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.placement-description {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.placement-services h2,
+.placement-success h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0073e6;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  content: "";
+}
+
+.services-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #eaedee;
+  border-left: 5px solid #0073e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.services-list li:hover {
+  transform: translateX(10px);
+  background: #f0f8ff;
+}
+
+.success-stories {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.story {
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.story h3 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.story p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.placement-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: linear-gradient(to right, #5d96d3, #c1d6ec);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.placement-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.placement-footer p {
+  font-size: 1.2rem;
+}
+
+.btn-enroll-now {
+  background: linear-gradient(to bottom, #0073e6, #005bb5);
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-enroll-now:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #005bb5, #003d73);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .placement-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .placement-header p {
+    font-size: 1rem;
+  }
+
+  .placement-overview {
+    flex-direction: column;
+  }
+
+  .placement-image {
+    max-width: 100%;
+  }
+
+  .placement-description {
+    flex: none;
+    margin-top: 20px;
+  }
+
+  .services-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .placement-header h1 {
+    font-size: 2rem;
+  }
+
+  .placement-header p {
+    font-size: 0.9rem;
+  }
+
+  .placement-services h2,
+  .placement-success h2 {
+    font-size: 2rem;
+  }
+
+  .services-list li {
+    font-size: 0.9rem;
+  }
+
+  .success-stories {
+    grid-template-columns: 1fr;
+  }
+
+  .story h3 {
+    font-size: 1.5rem;
+  }
+
+  .placement-footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-enroll-now {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .placement-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .placement-header p {
+    font-size: 0.85rem;
+  }
+
+  .placement-services h2,
+  .placement-success h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-list li {
+    font-size: 0.85rem;
+  }
+
+  .story h3 {
+    font-size: 1.3rem;
+  }
+
+  .placement-footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-enroll-now {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

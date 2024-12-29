@@ -1,0 +1,238 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.data-analysis {
+  text-align: center;
+  margin-left: 40px;
+}
+
+.data-analysis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(120deg, #f8f7fb, #4c4ce7);
+  color: white;
+  padding: 50px 80px;
+  flex-wrap: nowrap;
+}
+
+.hero-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: typing 2s steps(30) 1s forwards, blink 0.75s step-end infinite;
+  background: linear-gradient(to right, #eb4444, #6e0c68, #0dce87);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+.data-analysis-header img {
+  max-width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Introduction Section */
+.introduction {
+  padding: 50px 20px;
+}
+
+.introduction h2 {
+  font-size: 36px;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Tools Section */
+.tools-section {
+  background: #f3f4f6;
+  padding: 50px 20px;
+}
+
+.tools-section h2 {
+  font-size: 36px;
+  color: #1d4ed8;
+}
+
+.tools-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tools-content ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  max-width: 50%;
+}
+
+.tools-content li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.tools-content img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 50px 20px;
+}
+
+.benefits h2 {
+  font-size: 36px;
+  color: #1d4ed8;
+  margin-bottom: 20px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h3 {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 16px;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+  background: #b0c2e9;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 32px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.dataAnalysisImage-image:hover {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+/* Media Queries */
+
+/* For Tablets (Max-width: 768px) */
+@media (max-width: 768px) {
+  .data-analysis-header {
+      flex-direction: column;
+      padding: 30px 20px;
+  }
+
+  .hero-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  .hero-content p {
+      font-size: 16px;
+  }
+
+  .tools-content ul {
+      max-width: 100%;
+  }
+
+  .tools-content img {
+      max-width: 100%;
+      margin-top: 20px;
+  }
+
+  .benefits-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* For Mobile Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 28px;
+  }
+
+  .hero-content p {
+      font-size: 14px;
+  }
+
+  .introduction h2,
+  .tools-section h2,
+  .benefits h2,
+  .call-to-action h2 {
+      font-size: 24px;
+  }
+
+  .introduction p,
+  .call-to-action p {
+      font-size: 14px;
+  }
+
+  .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}

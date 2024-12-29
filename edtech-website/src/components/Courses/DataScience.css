@@ -1,0 +1,240 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+}
+
+.data-science {
+  color: #333;
+  min-width: 100%;
+}
+
+.data-science-header {
+  background: linear-gradient(120deg, #f2f3f3, #2563eb);
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.data-science-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #6e0c68;
+}
+
+.data-science-header p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.data-science-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  gap: 20px;
+}
+
+.data-science-overview img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.data-science-overview .content {
+  flex: 1;
+}
+
+.data-science-overview h2 {
+  font-size: 32px;
+  color: #1d4ed8;
+}
+
+.data-science-overview p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.course-features {
+  background-color: #f3f4f6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.course-features h2 {
+  font-size: 32px;
+  color: #1d4ed8;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+.call-to-action {
+  background: #cbe1f0;
+  color: rgb(75, 72, 72);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.call-to-action h2 {
+  font-size: 32px;
+  color: rgb(41, 41, 41);
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: rgb(41, 41, 41);
+}
+
+.enroll-button {
+  padding: 15px 30px;
+  background: #f4f6fa;
+  color: rgb(65, 125, 235);
+  border: 1px solid rgb(65, 125, 235);
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enroll-button:hover {
+  background-color: #0d3dcf;
+  color: white;
+}
+
+.about-course {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-course h2 {
+  font-size: 32px;
+  color: #1d4ed8;
+  margin-bottom: 20px;
+}
+
+.about-course p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.key-features {
+  padding: 50px 20px;
+}
+
+.key-features h2 {
+  font-size: 32px;
+  color: #1d4ed8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.key-features-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.key-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.key-features li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.key-features li strong {
+  color: #2563eb;
+}
+
+.key-features img {
+  flex: 0 0 40%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .data-science-overview {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .data-science-overview img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .key-features-content {
+    flex-direction: column;
+  }
+
+  .key-features img {
+    margin-top: 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-science-header h1 {
+    font-size: 28px;
+  }
+
+  .data-science-header p {
+    font-size: 16px;
+  }
+
+  .call-to-action h2 {
+    font-size: 24px;
+  }
+
+  .call-to-action p {
+    font-size: 16px;
+  }
+
+  .enroll-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .key-features ul {
+    font-size: 16px;
+  }
+}

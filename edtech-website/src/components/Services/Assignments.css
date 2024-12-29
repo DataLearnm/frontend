@@ -1,0 +1,259 @@
+/* Page Structure */
+.assignments-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.assignments-header {
+  background: linear-gradient(135deg, #ecebee, #688fd3);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.assignments-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.assignments-header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Main Content */
+.assignments-content {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.assignments-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.assignments-intro h2 {
+  font-size: 2rem;
+  color: #6a11cb;
+}
+
+.assignments-intro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Assignments List */
+.assignments-list {
+  margin-bottom: 40px;
+}
+
+.assignments-list h2 {
+  text-align: center;
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.assignment-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card h3 {
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.assignment-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background: #2575fc;
+}
+
+/* Benefits Section */
+.assignments-benefits {
+  background: #f0f4ff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.assignments-benefits h2 {
+  color: #6a11cb;
+  margin-bottom: 20px;
+}
+
+.assignments-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.assignments-benefits ul li {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.assignments-footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.back-button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .assignments-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .assignments-header p {
+    font-size: 1.1rem;
+  }
+
+  .assignments-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .assignments-list h2 {
+    font-size: 1.6rem;
+  }
+
+  .assignments-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .assignment-card {
+    padding: 15px;
+  }
+
+  .start-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .assignments-header h1 {
+    font-size: 2rem;
+  }
+
+  .assignments-header p {
+    font-size: 1rem;
+  }
+
+  .assignments-intro h2,
+  .assignments-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .assignments-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .assignment-card {
+    padding: 15px;
+  }
+
+  .start-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .assignments-benefits ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .assignments-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .assignments-header p {
+    font-size: 0.9rem;
+  }
+
+  .assignments-intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .assignments-list h2 {
+    font-size: 1.4rem;
+  }
+
+  .assignments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-card {
+    padding: 12px;
+  }
+
+  .start-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .assignments-benefits ul li {
+    font-size: 0.85rem;
+  }
+
+  .back-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

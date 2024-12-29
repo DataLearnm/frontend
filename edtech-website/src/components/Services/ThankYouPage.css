@@ -1,0 +1,90 @@
+.thank-you-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.thank-you-container {
+    background: linear-gradient(135deg, #c2edc3, #81C784);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.thank-you-page h1 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.thank-you-page p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.thank-you-page button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.thank-you-page button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .thank-you-page h1 {
+        font-size: 2.2rem;
+    }
+
+    .thank-you-page p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .thank-you-page p {
+        font-size: 0.9rem;
+    }
+}

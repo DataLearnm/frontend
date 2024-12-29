@@ -1,0 +1,55 @@
+.interview-form-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.schedule-form input,
+.schedule-form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.schedule-form button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.schedule-form button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .interview-form-page {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .schedule-form input,
+  .schedule-form textarea {
+    font-size: 14px;
+  }
+
+  .schedule-form button {
+    padding: 10px;
+  }
+}

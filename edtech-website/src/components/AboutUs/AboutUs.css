@@ -1,0 +1,254 @@
+/* General Styles */
+.about-us-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-left: 70px;
+  padding: 0;
+}
+
+/* Hero Section */
+.about-us-hero {
+  background: linear-gradient(120deg, #f2f3f4, #928df7);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.about-us-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: rgb(246, 24, 61);
+}
+
+.about-us-hero p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.mission-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4c63ff;
+}
+
+.mission-section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Our Story Section */
+.story-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.story-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4c63ff;
+}
+
+.story-section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Achievements Section */
+.achievements-section {
+  padding: 40px 20px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.achievements-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #4c63ff;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.achievement h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.achievement p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Team Section */
+.team-section {
+  padding: 40px 20px;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4c63ff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #8d9bf2;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: rgb(40, 39, 39);
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: rgb(40, 39, 39);
+}
+
+.cta-button {
+  background: white;
+  color: #4c63ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-us-page {
+      margin-left: 20px;
+  }
+
+  .about-us-hero h1 {
+      font-size: 32px;
+  }
+
+  .about-us-hero p {
+      font-size: 16px;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .achievements-section h2,
+  .team-section h2,
+  .cta-section h2 {
+      font-size: 28px;
+  }
+
+  .mission-section p,
+  .story-section p,
+  .achievements-section p,
+  .cta-section p {
+      font-size: 16px;
+  }
+
+  .achievements-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .team-member img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .team-member h3 {
+      font-size: 16px;
+  }
+
+  .team-member p {
+      font-size: 12px;
+  }
+
+  .cta-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-hero {
+      padding: 30px 10px;
+  }
+
+  .about-us-hero h1 {
+      font-size: 28px;
+  }
+
+  .about-us-hero p {
+      font-size: 14px;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .achievements-section h2,
+  .team-section h2,
+  .cta-section h2 {
+      font-size: 24px;
+  }
+
+  .mission-section p,
+  .story-section p,
+  .achievements-section p,
+  .cta-section p {
+      font-size: 14px;
+  }
+
+  .cta-button {
+      font-size: 14px;
+      padding: 6px 12px;
+  }
+}

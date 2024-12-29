@@ -1,0 +1,163 @@
+/* Container */
+.registration-container {
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  max-width: 500px;  /* Adjust form section width */
+}
+
+/* Title */
+.registration-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Form Styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.register-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+
+/* For screens 768px or smaller */
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column; /* Stack the form and image sections */
+    padding: 15px;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .registration-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+  }
+
+  .register-btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+}
+
+/* For screens 480px or smaller */
+@media (max-width: 480px) {
+  .registration-container {
+    padding: 10px;
+  }
+
+  .registration-title {
+    font-size: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .register-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+/* For screens 375px or smaller */
+@media (max-width: 375px) {
+  .registration-container {
+    padding: 8px;
+  }
+
+  .registration-title {
+    font-size: 1.1rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .register-btn {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
